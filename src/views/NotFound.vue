@@ -1,5 +1,4 @@
 <template>
-  <!-- 404 页面 -->
   <main class="not-found">
     <h1>This page can't be found</h1>
     <p class="more-info">

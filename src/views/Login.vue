@@ -14,6 +14,10 @@ export default {
   methods: {
     openGoogleSignin() {
       // TODO
+      const url = "http://localhost:3000/auth/google";
+      const name = "google_login";
+      const specs = "width=500,height=500";
+      window.open(url, name, specs);
     }
   }
 };

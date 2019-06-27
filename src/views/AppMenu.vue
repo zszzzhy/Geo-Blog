@@ -24,32 +24,14 @@
 </template>
 
 <script>
-export default {
-  computed: {
-    user() {
-      return this.$store.state.user;
-    },
-    userPicture() {
-      return null; // TODO
-    }
-  },
+import { mapGetters, mapActions } from "vuex";
 
-  methods: {
-    centerOnUser() {
-      // TODO
-    },
-    logout() {
-      if (!this.user) {
-        const userData = {
-          profile: {
-            displayName: "Mr Cat"
-          }
-        };
-        this.$store.commit("user", userData);
-      } else {
-        this.$store.commit("user", null);
-      }
-    }
-  }
+export default {
+  computed: mapGetters(["user", "userPicture"]),
+
+  methods: mapActions({
+    centerOnUser: "login",
+    logout: "logout"
+  })
 };
 </script>

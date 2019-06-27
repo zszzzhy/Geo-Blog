@@ -7,7 +7,7 @@ import NotFound from "./views/NotFound.vue";
 
 Vue.use(Router);
 
-const routers = [
+const routes = [
   {
     path: "/",
     name: "home",
@@ -29,7 +29,7 @@ const routers = [
 ];
 
 const router = new Router({
-  routers,
+  routes,
   mode: "history",
   // 滚动行为
   scrollBehavior(to, from, savedPosition) {
