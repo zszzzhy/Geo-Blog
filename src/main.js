@@ -4,7 +4,7 @@ import router from "./router";
 import store from "./store";
 
 import * as filters from "./filters";
-import VueFetch, { $fetch } from "./plugins/fetch";
+import VueFetch from "./plugins/fetch";
 
 // 过滤器
 for (const key in filters) {
@@ -12,9 +12,7 @@ for (const key in filters) {
 }
 
 // API域名配置
-Vue.use(VueFetch, {
-  baseUrl: "http://localhost:3000"
-});
+Vue.use(VueFetch, { baseUrl: "http://localhost:3000" });
 
 function main() {
   // 启动应用

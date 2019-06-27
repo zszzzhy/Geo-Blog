@@ -8,9 +8,24 @@ import NotFound from "./views/NotFound.vue";
 Vue.use(Router);
 
 const routers = [
-  { path: "/", name: "home", component: GeoBlog, meta: { private: true } },
-  { path: "/login", name: "login", component: Login },
-  { path: "*", component: NotFound }
+  {
+    path: "/",
+    name: "home",
+    component: GeoBlog,
+    meta: {
+      private: true
+    }
+  },
+  {
+    path: "/login",
+    name: "login",
+    component: Login
+  },
+  {
+    path: "*",
+    name: "404",
+    component: NotFound
+  }
 ];
 
 const router = new Router({

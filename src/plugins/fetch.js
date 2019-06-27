@@ -1,4 +1,4 @@
-import router from "../router";
+// import router from "../router";
 
 let baseUrl;
 
@@ -32,7 +32,7 @@ export async function $fetch(url, options) {
     // 会话过期
     // 如果会话不再有效，我们登出
     // state.user = null;
-    // // 如果这个路由是私有的，我们跳转到登录页面
+    //  如果这个路由是私有的，我们跳转到登录页面
     // if (router.currentRoute.matched.some(r => r.meta.private)) {
     //   router.replace({
     //     name: "login",
